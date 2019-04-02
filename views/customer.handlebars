@@ -1,5 +1,5 @@
 
-<div style="margin-left: 200px; margin-right: 200px">
+<div style="margin-left: 150px; margin-right: 150px">
   <div class="indexNav">
     <ul class="nav justify-content-end">
       <li class="nav-item">
@@ -12,8 +12,7 @@
   </div>
 </div>
 
-<div class="container body-content">
-  <div class="page-header">
+<div style="margin-left: 150px; margin-right: 150px; font-size: 13px">
     <label class="heading">Delivery Order History</label>
     <div class="form-group">
       <fieldset>
@@ -23,7 +22,7 @@
           <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
             <thead>
               <tr>
-                <th scope="col" data-sortable="true">ID#</th>
+                {{!-- <th scope="col" data-sortable="true">ID#</th> --}}
                 <th scope="col">B/L</th>
                 <th scope="col">Terminal Name</th>
                 <th scope="col">Container No.</th>
@@ -41,7 +40,7 @@
             <tbody>
               {{#each deliveryOrder}}
               <tr>
-                <td>{{this.id}}</td>
+                {{!-- <td>{{this.id}}</td> --}}
                 <td>{{this.BL}}</td>
                 <td>{{this.Terminal_Name}}</td>
                 <td>{{this.Container_No}}</td>
@@ -65,7 +64,7 @@
       </fieldset>
     </div>
     <hr />
-  </div>
+
 </div>
 
 
